@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color:rgba(0, 0, 0,0.85); 
+}
+#card{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 15px rgb(169, 169, 135);
+    background-color: whitesmoke;
+    gap: 60px;
+}
+#in{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    gap: 40px;
+}
+.lab{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+}
+label{
+    font-size: 25px;
+    font-weight: 900;
+}
+.pass{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pass:focus{
+    background-color: black;
+    color: rgba(229, 229, 141, 0.658);
+    font-size: 20px;
+}
+#pass2~p{
+    color: red;
+    font-weight: 600;
+    font-size: 13px;
+}
+#in~button{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+#in~button:active{
+    background-image: linear-gradient(rgba(101, 116, 24, 0.156),rgba(57, 47, 133, 0.5));
+    box-shadow: 0px 0px 10px 0px;
+}

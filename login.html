@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgba(0, 0, 0,0.85);
+        }
+        #log1{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 30px; 
+            padding: 40px 20px;
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px 15px rgb(169, 169, 135);
+            background-color: whitesmoke;
+        }
+        label{
+            font-size: 30px;
+            font-weight: 900;
+        }
+        input{
+            width: 300px;
+            height: 20px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        input:focus{
+            background-color: black;
+            color: rgba(229, 229, 141, 0.658);
+            font-size: 20px;
+        }
+        button{
+            cursor: pointer;
+            background-color: darkgoldenrod;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: none;
+            outline: none;
+        }
+        button:active{
+            background-image: linear-gradient(rgba(101, 116, 24, 0.156),rgba(57, 47, 133, 0.5));
+            box-shadow: 0px 0px 10px 0px; 
+        }
+        #curr{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+        #curr p{
+            color: red;
+            font-weight: 600;
+            font-size: 15px;
+            position: relative;
+            bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="log1">
+        <label for="log_in">Enter your password</label>
+        <div id="curr">
+            <input type="password" id="log_in" placeholder="Enter your password">
+            <p id="pra1"></p>
+        </div>
+        <button id="but2">Login</button>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
